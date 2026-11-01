@@ -6,13 +6,11 @@ class Solution:
         n: int = len(nums)
 
         while i < n and j < n:
-
             if nums[i] != nums[j]:
 
                 nums[i + 1] = nums[j]
                 i += 1
-                j += 1
-            else:
-                j += 1
+            j += 1
+
 
         return i + 1
