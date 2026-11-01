@@ -23,8 +23,4 @@ class Solution:
             nums1[i] = nums2[j]
             i += 1
             j += 1
-
-    
-        
-
             
