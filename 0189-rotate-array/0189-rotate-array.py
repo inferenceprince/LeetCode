@@ -3,7 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        if len(nums) <= k:
+        if len(nums) < k:
             k = k % len(nums)
         nums[:] = nums[:-k][::-1] + nums[-k:][::-1]
         nums[:] = nums[::-1]
